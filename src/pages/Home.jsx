@@ -2,9 +2,7 @@ import { Button, Card, Typography } from "antd";
 
 const { Title, Paragraph, Link } = Typography;
 
-function Home() {
-    const title = "Тестове завдання";
-    
+function Home() {    
     return (
         <Card>
             <Title level={2}>Тестове завдання</Title>
