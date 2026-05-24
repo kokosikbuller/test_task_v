@@ -4,6 +4,7 @@ export const theme = {
         colorSuccess: '#52c41a',
         colorError: '#ff4d4f',
         borderRadius: 8,
+        chartHeight: 400,
     },
     components: {
         Button: {

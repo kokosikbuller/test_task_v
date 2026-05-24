@@ -5,4 +5,7 @@ export const coinsApi = {
     api(
       `/coins/markets?vs_currency=usd&per_page=${perPage}&page=${page}`,
     ),
+
+  getMarketChart: (coinId) =>
+    api(`/coins/${coinId}/market_chart?vs_currency=usd&days=7`),
 };
