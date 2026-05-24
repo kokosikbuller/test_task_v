@@ -1,14 +1,11 @@
-import { Table, Spin, Alert, theme, Flex, Typography } from 'antd';
+import { Spin, Alert, Flex, Typography } from 'antd';
 import { useCoins } from '../../hooks/useCoins';
-import { getColumns } from './columns.jsx';
+import CoinsTable from '../../components/CoinsTable.jsx';
 
 const { Title } = Typography;
 
 const Coins = () => {
-    const { token } = theme.useToken();
     const { data: coins, isLoading, error } = useCoins();
-
-    const columns = getColumns(token);
 
     if (isLoading) {
         return (
@@ -37,15 +34,7 @@ const Coins = () => {
                 Top 50 Cryptocurrencies
             </Title>
 
-            <Table
-                dataSource={coins}
-                columns={columns}
-                scroll={{ x: 800 }}
-                sticky
-                rowKey="id"
-                size="middle"
-                pagination={false}
-            />
+            <CoinsTable dataSource={coins} />
         </Flex>
     );
 };

@@ -17,7 +17,6 @@ export const getColumns = (token) => [
                 {record.name}
             </Space>
         ),
-        width: 150,
     },
     {
         title: 'Price',
