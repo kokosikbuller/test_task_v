@@ -1,8 +1,8 @@
-import { Card, Typography } from "antd";
+import { Button, Card, Typography } from "antd";
 
 const { Title, Paragraph, Link } = Typography;
 
-function Home() {
+function Home() {    
     return (
         <Card>
             <Title level={2}>Тестове завдання</Title>
@@ -16,6 +16,7 @@ function Home() {
             <Paragraph type="secondary">
                 Стек: React + Vite + Ant Design + React Router.
             </Paragraph>
+            <Button type="primary" href="/TASK.md" target="_blank"> Відкрити завдання</Button>
         </Card>
     );
 }

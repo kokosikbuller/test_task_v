@@ -1,12 +1,24 @@
 export const theme = {
     token: {
-        colorPrimary: "#e53935",
+        colorPrimary: "#1890ff",
+        colorSuccess: '#52c41a',
+        colorError: '#ff4d4f',
+        borderRadius: 8,
+        chartHeight: 400,
     },
     components: {
         Button: {
-            borderRadius: 0,
-            borderRadiusLG: 0,
-            borderRadiusSM: 0,
+            borderRadius: 8,
+        },
+        Table: {
+            headerBg: '#f0f5ff',
+            headerColor: '#1f1f1f',
+
+            rowHoverBg: '#e6f4ff',
+
+            cellPaddingInline: 12,
+            cellPaddingBlock: 8,
         },
     },
 };
+
